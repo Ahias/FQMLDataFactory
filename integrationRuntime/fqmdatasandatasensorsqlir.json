@@ -1,7 +1,0 @@
-{
-    "name": "fqmdatasandatasensorsqlir",
-    "properties": {
-        "type": "SelfHosted",
-        "description": "Integration runtime for connection to Sql Servers FQML"
-    }
-}
