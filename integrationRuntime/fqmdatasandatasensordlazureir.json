@@ -1,0 +1,17 @@
+{
+    "name": "fqmdatasandatasensordlazureir",
+    "properties": {
+        "type": "Managed",
+        "description": "IR for connection azure FQML",
+        "typeProperties": {
+            "computeProperties": {
+                "location": "South Africa North",
+                "dataFlowProperties": {
+                    "computeType": "General",
+                    "coreCount": 8,
+                    "timeToLive": 0
+                }
+            }
+        }
+    }
+}

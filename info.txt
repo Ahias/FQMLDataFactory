@@ -1,0 +1,6 @@
+selected resource name:		Pi300MetallurgyStreamsMSAPIVOTpi
+selected resource type:		pipeline
+factory name:			fqmdatasandatasensordatalakedf
+factory location:		southafricanorth
+subscription id:		d57665c1-2107-40a0-be1e-72cc19b2a012
+time of download (UTC):		Thu, 10 Sep 2020 21:20:46 GMT

@@ -1,0 +1,22 @@
+{
+    "now": "2020-09-10T21:20:46.693Z",
+    "perfNow": 606901309.01,
+    "diagnosticCorrelation": "c18f742a-ae4e-4d03-a6b2-67a39e048538",
+    "source": "DownloadSupportFiles",
+    "environment": {
+        "productName": "adf",
+        "buildVersion": "1.0.20200827.11",
+        "environmentType": 3,
+        "resourceName": "fqmdatasandatasensordatalakedf",
+        "resourceRegion": "southafricanorth",
+        "resourceGroup": "FQM-DATA-SAN-DATA-SENSORDATALAKE-RG",
+        "subscriptionId": "d57665c1-2107-40a0-be1e-72cc19b2a012",
+        "sessionId": "70mN6",
+        "operationId": "x5nXg",
+        "gitType": "VSTS"
+    },
+    "additionalInfo": {
+        "selectedResource": "Pi300MetallurgyStreamsMSAPIVOTpi",
+        "selectedResourceType": "pipeline"
+    }
+}
