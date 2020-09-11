@@ -1,16 +1,12 @@
 {
-    "name": "fqmldatasandatasensordatalakedbls",
-    "type": "Microsoft.DataFactory/factories/linkedservices",
-    "properties": {
-        "annotations": [],
-        "type": "AzureSqlDatabase",
-        "typeProperties": {
-            "connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=fqm-data-san-data-sensordatalake-sqlsrv.database.windows.net;initial catalog=fqmldatasandatasensordatalakedb;user id=usersqldl",
-            "encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkZRTURBVEFTQU5EQVRBU0VOU09SREFUQUxBS0VERl81YTRlYzcwYS1jN2NkLTQzY2EtOWNhMy0zZTkyMzg1ZTFiOWIiDQp9"
-        },
-        "connectVia": {
-            "referenceName": "fqmdatasandatasensordlazureir",
-            "type": "IntegrationRuntimeReference"
-        }
-    }
+	"name": "fqmldatasandatasensordatalakedbls",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=test-fqml-data-sensordatalake-sqlsrv.database.windows.net;initial catalog=fqmldatasensordatalakedb;user id=usersqldl",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIlRFU1RGUU1MREFUQVNFTlNPUkRBVEFMQUtFREZfYjZiYmE0ODgtYTg5OS00NGM0LTg2ODktNDIwMTMzNDRkY2EwIg0KfQ=="
+		}
+	}
 }
