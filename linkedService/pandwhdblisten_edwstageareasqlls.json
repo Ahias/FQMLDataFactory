@@ -6,9 +6,16 @@
 		"annotations": [],
 		"type": "SqlServer",
 		"typeProperties": {
-			"connectionString": "integrated security=True;data source=PANDWHDB-LISTEN;initial catalog=EDWStageArea",
+			"connectionString": "Integrated Security=True;Data Source=PANDWHDB-LISTEN;Initial Catalog=EDWStageArea",
 			"userName": "fqml\\pan_primusdata01",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJjZTc1MWJjYS0yMjFiLTRhMDYtYTY1MC1kZjIyZjU0ZGY3MzYiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "fqmlsecretskv",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "onpremisepwdkvs"
+			}
 		},
 		"connectVia": {
 			"referenceName": "fqmldatasensorsqlir",
