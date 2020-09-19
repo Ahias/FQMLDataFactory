@@ -14,7 +14,7 @@
 					"referenceName": "fqmlsecretskv",
 					"type": "LinkedServiceReference"
 				},
-				"secretName": "onpremisepwdkvs"
+				"secretName": "onpremisessqlsrvpwdkvs"
 			}
 		},
 		"connectVia": {
