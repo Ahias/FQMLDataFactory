@@ -645,6 +645,10 @@
 							],
 							"userProperties": [],
 							"typeProperties": {
+								"expression": {
+									"value": "1==1",
+									"type": "Expression"
+								},
 								"ifTrueActivities": [
 									{
 										"name": "mlrequests",
