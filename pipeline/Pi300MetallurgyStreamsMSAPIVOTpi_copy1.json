@@ -1,5 +1,5 @@
 {
-	"name": "Pi300MetallurgyStreamsMSAPIVOTpi",
+	"name": "Pi300MetallurgyStreamsMSAPIVOTpi_copy1",
 	"properties": {
 		"description": "Load table [FQML\\svc_pan_bi_EXT].[Pi.300_Metallurgy_Streams_MSA_PIVOT]",
 		"activities": [
@@ -551,7 +551,7 @@
 							"type": "SqlServerStoredProcedure",
 							"dependsOn": [
 								{
-									"activity": "mlrequests",
+									"activity": "If Condition1",
 									"dependencyConditions": [
 										"Succeeded"
 									]
@@ -633,8 +633,8 @@
 							}
 						},
 						{
-							"name": "mlrequests",
-							"type": "AzureFunctionActivity",
+							"name": "If Condition1",
+							"type": "IfCondition",
 							"dependsOn": [
 								{
 									"activity": "Copy data Pi300MetallurgyStreamsMSAPIVOT",
@@ -643,6 +643,18 @@
 									]
 								}
 							],
+							"userProperties": [],
+							"typeProperties": {
+								"expression": {
+									"value": "1==1",
+									"type": "Expression"
+								}
+							}
+						},
+						{
+							"name": "mlrequests",
+							"type": "AzureFunctionActivity",
+							"dependsOn": [],
 							"policy": {
 								"timeout": "7.00:00:00",
 								"retry": 0,
