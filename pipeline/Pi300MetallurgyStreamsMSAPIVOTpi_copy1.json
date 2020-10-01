@@ -646,7 +646,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"expression": {
-									"value": "1==1",
+									"value": "@item().sendrequest",
 									"type": "Expression"
 								},
 								"ifTrueActivities": [
