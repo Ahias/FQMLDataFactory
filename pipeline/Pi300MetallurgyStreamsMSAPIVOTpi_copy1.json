@@ -551,7 +551,7 @@
 							"type": "SqlServerStoredProcedure",
 							"dependsOn": [
 								{
-									"activity": "If Condition1",
+									"activity": "Prediction execution validation",
 									"dependencyConditions": [
 										"Succeeded"
 									]
@@ -633,7 +633,7 @@
 							}
 						},
 						{
-							"name": "If Condition1",
+							"name": "Prediction execution validation",
 							"type": "IfCondition",
 							"dependsOn": [
 								{
@@ -648,32 +648,34 @@
 								"expression": {
 									"value": "1==1",
 									"type": "Expression"
-								}
-							}
-						},
-						{
-							"name": "mlrequests",
-							"type": "AzureFunctionActivity",
-							"dependsOn": [],
-							"policy": {
-								"timeout": "7.00:00:00",
-								"retry": 0,
-								"retryIntervalInSeconds": 30,
-								"secureOutput": false,
-								"secureInput": false
-							},
-							"userProperties": [],
-							"typeProperties": {
-								"functionName": "mlrequestfn",
-								"method": "POST",
-								"body": {
-									"value": "@replace(replace(replace(replace( replace( replace( variables('strjsonfn') , 'prModule',  variables('Module')) , 'prParameterName' , variables('ParameterName')) , 'prInstance',variables('Instance')) , 'prmainpath',variables('mainpath')) , 'prtablepath' , item().pathformat ),'prfilename' , item().filename)",
-									"type": "Expression"
-								}
-							},
-							"linkedServiceName": {
-								"referenceName": "fqmlmlrequestfn",
-								"type": "LinkedServiceReference"
+								},
+								"ifTrueActivities": [
+									{
+										"name": "mlrequests",
+										"type": "AzureFunctionActivity",
+										"dependsOn": [],
+										"policy": {
+											"timeout": "7.00:00:00",
+											"retry": 0,
+											"retryIntervalInSeconds": 30,
+											"secureOutput": false,
+											"secureInput": false
+										},
+										"userProperties": [],
+										"typeProperties": {
+											"functionName": "mlrequestfn",
+											"method": "POST",
+											"body": {
+												"value": "@replace(replace(replace(replace( replace( replace( variables('strjsonfn') , 'prModule',  variables('Module')) , 'prParameterName' , variables('ParameterName')) , 'prInstance',variables('Instance')) , 'prmainpath',variables('mainpath')) , 'prtablepath' , item().pathformat ),'prfilename' , item().filename)",
+												"type": "Expression"
+											}
+										},
+										"linkedServiceName": {
+											"referenceName": "fqmlmlrequestfn",
+											"type": "LinkedServiceReference"
+										}
+									}
+								]
 							}
 						}
 					]
