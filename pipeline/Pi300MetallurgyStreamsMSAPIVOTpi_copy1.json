@@ -550,7 +550,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"filename": {
-											"value": "@item().filename",
+											"value": "@variables('filename')",
 											"type": "Expression"
 										},
 										"mainpath": {
@@ -558,7 +558,7 @@
 											"type": "Expression"
 										},
 										"tablepath": {
-											"value": "@item().pathformat",
+											"value": "@variables('tablepath')",
 											"type": "Expression"
 										}
 									}
