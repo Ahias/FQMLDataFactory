@@ -635,11 +635,18 @@
 						{
 							"name": "Prediction execution validation",
 							"type": "IfCondition",
-							"dependsOn": [],
+							"dependsOn": [
+								{
+									"activity": "setqueryazurefuntion",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
 							"userProperties": [],
 							"typeProperties": {
 								"expression": {
-									"value": "@item().sendrequest",
+									"value": "@equals(item().sendrequest,1)",
 									"type": "Expression"
 								},
 								"ifTrueActivities": [
@@ -659,7 +666,7 @@
 											"functionName": "mlrequestfn",
 											"method": "POST",
 											"body": {
-												"value": "@replace(replace(replace(replace( replace( replace( variables('strjsonfn') , 'prModule',  variables('Module')) , 'prParameterName' , variables('ParameterName')) , 'prInstance',variables('Instance')) , 'prmainpath',variables('mainpath')) , 'prtablepath' , item().pathformat ),'prfilename' , item().filename)",
+												"value": "@variables('strjsonvaluefn')",
 												"type": "Expression"
 											}
 										},
