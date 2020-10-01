@@ -635,14 +635,7 @@
 						{
 							"name": "Prediction execution validation",
 							"type": "IfCondition",
-							"dependsOn": [
-								{
-									"activity": "setqueryazurefuntion",
-									"dependencyConditions": [
-										"Succeeded"
-									]
-								}
-							],
+							"dependsOn": [],
 							"userProperties": [],
 							"typeProperties": {
 								"expression": {
@@ -681,14 +674,7 @@
 						{
 							"name": "setqueryazurefuntion",
 							"type": "SetVariable",
-							"dependsOn": [
-								{
-									"activity": "Copy data Pi300MetallurgyStreamsMSAPIVOT",
-									"dependencyConditions": [
-										"Succeeded"
-									]
-								}
-							],
+							"dependsOn": [],
 							"userProperties": [],
 							"typeProperties": {
 								"variableName": "strjsonvaluefn",
@@ -697,6 +683,18 @@
 									"type": "Expression"
 								}
 							}
+						},
+						{
+							"name": "setmainpath",
+							"type": "SetVariable",
+							"dependsOn": [],
+							"userProperties": []
+						},
+						{
+							"name": "settablepath",
+							"type": "SetVariable",
+							"dependsOn": [],
+							"userProperties": []
 						}
 					]
 				}
@@ -980,6 +978,12 @@
 			"strjsonvaluefn": {
 				"type": "String",
 				"defaultValue": "{  \"Module\":\"prModule\" ,\"ParameterName\":\"prParameterName\" ,\"Instance\": \"prInstance\" ,\"mainpath\":\"prmainpath\" ,\"tablepath\":\"prtablepath\"  ,\"filename\":\"prfilename\" }"
+			},
+			"tablepath": {
+				"type": "String"
+			},
+			"filename": {
+				"type": "String"
 			}
 		},
 		"annotations": [],
