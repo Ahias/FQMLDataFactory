@@ -1,0 +1,23 @@
+{
+	"name": "pandwhdblisten_metallurgystreamspredictionsls",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "Integrated Security=False;Data Source=PANDWHDB-Listen;Initial Catalog=Metallurgy_Streams_Predictions;User ID=fqml\\pan_primusdata01",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "fqmlsecretskv",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "onpremisessqlsrvpwdkvs"
+			}
+		},
+		"connectVia": {
+			"referenceName": "fqmldatasensorsqlir",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
