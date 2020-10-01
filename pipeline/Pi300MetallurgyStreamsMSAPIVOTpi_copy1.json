@@ -684,8 +684,11 @@
 							],
 							"userProperties": [],
 							"typeProperties": {
-								"variableName": "strjsonfn",
-								"value": ""
+								"variableName": "strjsonvaluefn",
+								"value": {
+									"value": "@replace(replace(replace(replace( replace( replace( variables('strjsonfn') , 'prModule',  variables('Module')) , 'prParameterName' , variables('ParameterName')) , 'prInstance',variables('Instance')) , 'prmainpath',variables('mainpath')) , 'prtablepath' , item().pathformat ),'prfilename' , item().filename)",
+									"type": "Expression"
+								}
 							}
 						}
 					]
