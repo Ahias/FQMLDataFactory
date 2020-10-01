@@ -625,7 +625,7 @@
 									},
 									"PathString": {
 										"value": {
-											"value": "@concat('/ingestion / '  , item().pathformat  , '/' ,  item().filename)",
+											"value": "@concat('/ ', variables('mainpath') , '/' , item().pathformat  , '/' ,  item().filename)",
 											"type": "Expression"
 										},
 										"type": "String"
