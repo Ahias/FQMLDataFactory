@@ -1013,10 +1013,12 @@
 				"defaultValue": "{  \"Module\":\"prModule\" ,\"ParameterName\":\"prParameterName\" ,\"Instance\": \"prInstance\" ,\"mainpath\":\"prmainpath\" ,\"tablepath\":\"prtablepath\"  ,\"filename\":\"prfilename\" }"
 			},
 			"tablepath": {
-				"type": "String"
+				"type": "String",
+				"defaultValue": "/demo"
 			},
 			"filename": {
-				"type": "String"
+				"type": "String",
+				"defaultValue": "demo.csv"
 			}
 		},
 		"annotations": [],
