@@ -654,7 +654,14 @@
 						{
 							"name": "Prediction execution validation",
 							"type": "IfCondition",
-							"dependsOn": [],
+							"dependsOn": [
+								{
+									"activity": "Copy data Pi300MetallurgyStreamsMSAPIVOT",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
 							"userProperties": [],
 							"typeProperties": {
 								"expression": {
