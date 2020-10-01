@@ -82,7 +82,26 @@
 						{
 							"name": "Copy data Pi300MetallurgyStreamsMSAPIVOT",
 							"type": "Copy",
-							"dependsOn": [],
+							"dependsOn": [
+								{
+									"activity": "setqueryazurefuntion",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								},
+								{
+									"activity": "setfilename",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								},
+								{
+									"activity": "settablepath",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
 							"policy": {
 								"timeout": "7.00:00:00",
 								"retry": 0,
@@ -685,16 +704,30 @@
 							}
 						},
 						{
-							"name": "setmainpath",
+							"name": "setfilename",
 							"type": "SetVariable",
 							"dependsOn": [],
-							"userProperties": []
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "filename",
+								"value": {
+									"value": "@item().filename",
+									"type": "Expression"
+								}
+							}
 						},
 						{
 							"name": "settablepath",
 							"type": "SetVariable",
 							"dependsOn": [],
-							"userProperties": []
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "tablepath",
+								"value": {
+									"value": "@item().pathformat",
+									"type": "Expression"
+								}
+							}
 						}
 					]
 				}
