@@ -635,14 +635,7 @@
 						{
 							"name": "Prediction execution validation",
 							"type": "IfCondition",
-							"dependsOn": [
-								{
-									"activity": "Copy data Pi300MetallurgyStreamsMSAPIVOT",
-									"dependencyConditions": [
-										"Succeeded"
-									]
-								}
-							],
+							"dependsOn": [],
 							"userProperties": [],
 							"typeProperties": {
 								"expression": {
@@ -676,6 +669,23 @@
 										}
 									}
 								]
+							}
+						},
+						{
+							"name": "setqueryazurefuntion",
+							"type": "SetVariable",
+							"dependsOn": [
+								{
+									"activity": "Copy data Pi300MetallurgyStreamsMSAPIVOT",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
+							"userProperties": [],
+							"typeProperties": {
+								"variableName": "strjsonfn",
+								"value": ""
 							}
 						}
 					]
@@ -956,6 +966,10 @@
 			"Instance": {
 				"type": "String",
 				"defaultValue": "1"
+			},
+			"strjsonvaluefn": {
+				"type": "String",
+				"defaultValue": "{  \"Module\":\"prModule\" ,\"ParameterName\":\"prParameterName\" ,\"Instance\": \"prInstance\" ,\"mainpath\":\"prmainpath\" ,\"tablepath\":\"prtablepath\"  ,\"filename\":\"prfilename\" }"
 			}
 		},
 		"annotations": [],
