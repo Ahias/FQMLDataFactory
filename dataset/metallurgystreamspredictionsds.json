@@ -1,0 +1,12 @@
+{
+	"name": "metallurgystreamspredictionsds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "pandwhdblisten_metallurgystreamspredictionsls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	}
+}
