@@ -1,0 +1,65 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy data1",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobFSReadSettings",
+							"recursive": true
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink",
+						"sqlWriterStoredProcedureName": "ANALYTIC.spInsertPi300MetallurgyStreamsMSAPIVOT",
+						"sqlWriterTableType": "ANALYTIC.Pi300MetallurgyStreamsMSAPIVOTType",
+						"storedProcedureTableTypeParameterName": "NewRow"
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "MLPi300MetallurgyStreamsMSAPIVOTdatalakeds",
+						"type": "DatasetReference",
+						"parameters": {
+							"filename": "Pi300MetallurgyStreamsMSAPIVOT_20200101_0000.csv",
+							"mainpath": "ingestion",
+							"tablepath": "MLPi300MetallurgyStreamsMSAPIVOT/2020/01"
+						}
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "metallurgystreamspredictionsds",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}
