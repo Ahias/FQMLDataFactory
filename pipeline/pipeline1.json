@@ -27,7 +27,8 @@
 					},
 					"sink": {
 						"type": "SqlServerSink",
-						"sqlWriterStoredProcedureName": "ANALYTIC.spInsertPi300MetallurgyStreamsMSAPIVOT",
+						"writeBatchSize": 1000,
+						"sqlWriterStoredProcedureName": "[ANALYTIC].[spInsertPi300MetallurgyStreamsMSAPIVOT]",
 						"sqlWriterTableType": "ANALYTIC.Pi300MetallurgyStreamsMSAPIVOTType",
 						"storedProcedureTableTypeParameterName": "NewRow"
 					},
