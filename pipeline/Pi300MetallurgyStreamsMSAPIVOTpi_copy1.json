@@ -714,8 +714,29 @@
 										},
 										"userProperties": [],
 										"typeProperties": {
+											"source": {
+												"type": "DelimitedTextSource",
+												"storeSettings": {
+													"type": "AzureBlobFSReadSettings",
+													"recursive": true
+												},
+												"formatSettings": {
+													"type": "DelimitedTextReadSettings"
+												}
+											},
 											"enableStaging": false
-										}
+										},
+										"inputs": [
+											{
+												"referenceName": "MLPi300MetallurgyStreamsMSAPIVOTdatalakeds",
+												"type": "DatasetReference",
+												"parameters": {
+													"filename": "Pi300MetallurgyStreamsMSAPIVOT_20200101_0000.csv",
+													"mainpath": "ingestion",
+													"tablepath": "MLPi300MetallurgyStreamsMSAPIVOT/2020/01"
+												}
+											}
+										]
 									}
 								]
 							}
