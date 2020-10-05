@@ -34,6 +34,500 @@
 					"enableStaging": false,
 					"translator": {
 						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "TimeStamp",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "TimeStamp",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Solids1CUCLSCVT",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Solids1CUCLSCVT",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "SolidsT2RC3",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SolidsT2RC3",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "SolidsCUCLT",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SolidsCUCLT",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "SolidsT2RC1",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SolidsT2RC1",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "SolidsT1RC2",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SolidsT1RC2",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "SolidsT1RF",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SolidsT1RF",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "SolidsT2RF",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SolidsT2RF",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "SolidsT1RC3",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SolidsT1RC3",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "SolidsCUFC",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SolidsCUFC",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Solids1CUCLSCVC",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Solids1CUCLSCVC",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "SolidsT2RC2",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SolidsT2RC2",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Solids2CUCLT",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Solids2CUCLT",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Solids2CUCLSCVC",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Solids2CUCLSCVC",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "SolidsT1RC1",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SolidsT1RC1",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Solids2CUCLC",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Solids2CUCLC",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Solids1CUCLC",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Solids1CUCLC",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "SolidsCUCLC",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SolidsCUCLC",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "CuStream1CUCLSCVT",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CuStream1CUCLSCVT",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "CuStreamT2RC3",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CuStreamT2RC3",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "CuStreamCUCLT",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CuStreamCUCLT",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "CuStreamT2RC1",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CuStreamT2RC1",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "CuStreamT1RC2",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CuStreamT1RC2",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "CuStreamT1RF",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CuStreamT1RF",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "CuStreamT2RF",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CuStreamT2RF",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "CuStreamT1RC3",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CuStreamT1RC3",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "CuStreamCUFC",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CuStreamCUFC",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "CuStream1CUCLSCVC",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CuStream1CUCLSCVC",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "CuStreamT2RC2",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CuStreamT2RC2",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "CuStream2CUCLT",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CuStream2CUCLT",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "CuStream2CUCLSCVC",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CuStream2CUCLSCVC",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "CuStreamT1RC1",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CuStreamT1RC1",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "CuStream2CUCLC",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CuStream2CUCLC",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "CuStream1CUCLC",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CuStream1CUCLC",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "CuStreamCUCLC",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CuStreamCUCLC",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "CuT2RTOnline",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CuT2RTOnline",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "CuRT3",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CuRT3",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "SolidsRT3",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SolidsRT3",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "CuRT4",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CuRT4",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "SolidsRT4",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SolidsRT4",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							},
+							{
+								"source": {
+									"name": "PredVal",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PredVal",
+									"type": "String",
+									"physicalType": "varchar"
+								}
+							}
+						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
