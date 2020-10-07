@@ -683,7 +683,7 @@
 										},
 										"userProperties": [],
 										"typeProperties": {
-											"functionName": "mlrequestfn",
+											"functionName": "MLRequest",
 											"method": "POST",
 											"body": {
 												"value": "@variables('strjsonvaluefn')",
