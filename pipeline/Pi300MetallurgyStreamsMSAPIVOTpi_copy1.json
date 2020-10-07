@@ -1484,7 +1484,7 @@
 			},
 			"strjsonfn": {
 				"type": "String",
-				"defaultValue": "{  \"Module\":\"prModule\" ,\"ParameterName\":\"prParameterName\" ,\"Instance\": \"prInstance\" ,\"mainpath\":\"prmainpath\" ,\"tablepath\":\"prtablepath\"  ,\"filename\":\"/prfilename\" }"
+				"defaultValue": "{  \"Module\":\"prModule\" ,\"ParameterName\":\"prParameterName\" ,\"Instance\": \"prInstance\" ,\"mainpath\":\"prmainpath\" ,\"tablepath\":\"prtablepath\"  ,\"filename\":\"prfilename\" }"
 			},
 			"Module": {
 				"type": "String",
