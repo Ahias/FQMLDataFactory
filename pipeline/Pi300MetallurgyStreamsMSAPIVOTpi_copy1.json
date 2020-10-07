@@ -724,6 +724,10 @@
 													"type": "DelimitedTextReadSettings"
 												}
 											},
+											"sink": {
+												"type": "SqlServerSink",
+												"sqlWriterStoredProcedureName": "[ANALYTIC].[spInsertPi300MetallurgyStreamsMSAPIVOT]"
+											},
 											"enableStaging": false
 										},
 										"inputs": [
@@ -744,6 +748,12 @@
 														"type": "Expression"
 													}
 												}
+											}
+										],
+										"outputs": [
+											{
+												"referenceName": "metallurgystreamspredictionsds",
+												"type": "DatasetReference"
 											}
 										]
 									}
