@@ -732,7 +732,422 @@
 												"sqlWriterTableType": "ANALYTIC.Pi300MetallurgyStreamsMSAPIVOTType",
 												"storedProcedureTableTypeParameterName": "NewRow"
 											},
-											"enableStaging": false
+											"enableStaging": false,
+											"translator": {
+												"type": "TabularTranslator",
+												"mappings": [
+													{
+														"source": {
+															"name": "TimeStamp",
+															"type": "String"
+														},
+														"sink": {
+															"name": "TimeStamp",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "Solids1CUCLSCVT",
+															"type": "String"
+														},
+														"sink": {
+															"name": "Solids1CUCLSCVT",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "SolidsT2RC3",
+															"type": "String"
+														},
+														"sink": {
+															"name": "SolidsT2RC3",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "SolidsCUCLT",
+															"type": "String"
+														},
+														"sink": {
+															"name": "SolidsCUCLT",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "SolidsT2RC1",
+															"type": "String"
+														},
+														"sink": {
+															"name": "SolidsT2RC1",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "SolidsT1RC2",
+															"type": "String"
+														},
+														"sink": {
+															"name": "SolidsT1RC2",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "SolidsT1RF",
+															"type": "String"
+														},
+														"sink": {
+															"name": "SolidsT1RF",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "SolidsT2RF",
+															"type": "String"
+														},
+														"sink": {
+															"name": "SolidsT2RF",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "SolidsT1RC3",
+															"type": "String"
+														},
+														"sink": {
+															"name": "SolidsT1RC3",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "SolidsCUFC",
+															"type": "String"
+														},
+														"sink": {
+															"name": "SolidsCUFC",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "Solids1CUCLSCVC",
+															"type": "String"
+														},
+														"sink": {
+															"name": "Solids1CUCLSCVC",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "SolidsT2RC2",
+															"type": "String"
+														},
+														"sink": {
+															"name": "SolidsT2RC2",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "Solids2CUCLT",
+															"type": "String"
+														},
+														"sink": {
+															"name": "Solids2CUCLT",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "Solids2CUCLSCVC",
+															"type": "String"
+														},
+														"sink": {
+															"name": "Solids2CUCLSCVC",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "SolidsT1RC1",
+															"type": "String"
+														},
+														"sink": {
+															"name": "SolidsT1RC1",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "Solids2CUCLC",
+															"type": "String"
+														},
+														"sink": {
+															"name": "Solids2CUCLC",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "Solids1CUCLC",
+															"type": "String"
+														},
+														"sink": {
+															"name": "Solids1CUCLC",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "SolidsCUCLC",
+															"type": "String"
+														},
+														"sink": {
+															"name": "SolidsCUCLC",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "CuStream1CUCLSCVT",
+															"type": "String"
+														},
+														"sink": {
+															"name": "CuStream1CUCLSCVT",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "CuStreamT2RC3",
+															"type": "String"
+														},
+														"sink": {
+															"name": "CuStreamT2RC3",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "CuStreamCUCLT",
+															"type": "String"
+														},
+														"sink": {
+															"name": "CuStreamCUCLT",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "CuStreamT2RC1",
+															"type": "String"
+														},
+														"sink": {
+															"name": "CuStreamT2RC1",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "CuStreamT1RC2",
+															"type": "String"
+														},
+														"sink": {
+															"name": "CuStreamT1RC2",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "CuStreamT1RF",
+															"type": "String"
+														},
+														"sink": {
+															"name": "CuStreamT1RF",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "CuStreamT2RF",
+															"type": "String"
+														},
+														"sink": {
+															"name": "CuStreamT2RF",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "CuStreamT1RC3",
+															"type": "String"
+														},
+														"sink": {
+															"name": "CuStreamT1RC3",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "CuStreamCUFC",
+															"type": "String"
+														},
+														"sink": {
+															"name": "CuStreamCUFC",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "CuStream1CUCLSCVC",
+															"type": "String"
+														},
+														"sink": {
+															"name": "CuStream1CUCLSCVC",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "CuStreamT2RC2",
+															"type": "String"
+														},
+														"sink": {
+															"name": "CuStreamT2RC2",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "CuStream2CUCLT",
+															"type": "String"
+														},
+														"sink": {
+															"name": "CuStream2CUCLT",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "CuStream2CUCLSCVC",
+															"type": "String"
+														},
+														"sink": {
+															"name": "CuStream2CUCLSCVC",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "CuStreamT1RC1",
+															"type": "String"
+														},
+														"sink": {
+															"name": "CuStreamT1RC1",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "CuStream2CUCLC",
+															"type": "String"
+														},
+														"sink": {
+															"name": "CuStream2CUCLC",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "CuStream1CUCLC",
+															"type": "String"
+														},
+														"sink": {
+															"name": "CuStream1CUCLC",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "CuStreamCUCLC",
+															"type": "String"
+														},
+														"sink": {
+															"name": "CuStreamCUCLC",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "CuT2RTOnline",
+															"type": "String"
+														},
+														"sink": {
+															"name": "CuT2RTOnline",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "CuRT3",
+															"type": "String"
+														},
+														"sink": {
+															"name": "CuRT3",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "SolidsRT3",
+															"type": "String"
+														},
+														"sink": {
+															"name": "SolidsRT3",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "CuRT4",
+															"type": "String"
+														},
+														"sink": {
+															"name": "CuRT4",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "SolidsRT4",
+															"type": "String"
+														},
+														"sink": {
+															"name": "SolidsRT4",
+															"type": "String"
+														}
+													},
+													{
+														"source": {
+															"name": "PredVal",
+															"type": "String"
+														},
+														"sink": {
+															"name": "PredVal",
+															"type": "String"
+														}
+													}
+												]
+											}
 										},
 										"inputs": [
 											{
