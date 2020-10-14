@@ -8,7 +8,7 @@
 		"parameters": {
 			"filename": {
 				"type": "string",
-				"defaultValue": "Pi300MetallurgyStreamsMSAPIVOT_20200101_0000.csv"
+				"defaultValue": "Pi300MetallurgyStreamsMSAPIVOT_20200401_0000.json"
 			},
 			"mainpath": {
 				"type": "string",
@@ -16,11 +16,11 @@
 			},
 			"tablepath": {
 				"type": "string",
-				"defaultValue": "MLPi300MetallurgyStreamsMSAPIVOT/2020/01"
+				"defaultValue": "MLPi300MetallurgyStreamsMSAPIVOT/2020/04"
 			}
 		},
 		"annotations": [],
-		"type": "DelimitedText",
+		"type": "Json",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
@@ -36,178 +36,138 @@
 					"value": "@dataset().mainpath",
 					"type": "Expression"
 				}
-			},
-			"columnDelimiter": ",",
-			"escapeChar": "\\",
-			"firstRowAsHeader": true,
-			"quoteChar": "\""
-		},
-		"schema": [
-			{
-				"name": "TimeStamp",
-				"type": "String"
-			},
-			{
-				"name": "Solids1CUCLSCVT",
-				"type": "String"
-			},
-			{
-				"name": "SolidsT2RC3",
-				"type": "String"
-			},
-			{
-				"name": "SolidsCUCLT",
-				"type": "String"
-			},
-			{
-				"name": "SolidsT2RC1",
-				"type": "String"
-			},
-			{
-				"name": "SolidsT1RC2",
-				"type": "String"
-			},
-			{
-				"name": "SolidsT1RF",
-				"type": "String"
-			},
-			{
-				"name": "SolidsT2RF",
-				"type": "String"
-			},
-			{
-				"name": "SolidsT1RC3",
-				"type": "String"
-			},
-			{
-				"name": "SolidsCUFC",
-				"type": "String"
-			},
-			{
-				"name": "Solids1CUCLSCVC",
-				"type": "String"
-			},
-			{
-				"name": "SolidsT2RC2",
-				"type": "String"
-			},
-			{
-				"name": "Solids2CUCLT",
-				"type": "String"
-			},
-			{
-				"name": "Solids2CUCLSCVC",
-				"type": "String"
-			},
-			{
-				"name": "SolidsT1RC1",
-				"type": "String"
-			},
-			{
-				"name": "Solids2CUCLC",
-				"type": "String"
-			},
-			{
-				"name": "Solids1CUCLC",
-				"type": "String"
-			},
-			{
-				"name": "SolidsCUCLC",
-				"type": "String"
-			},
-			{
-				"name": "CuStream1CUCLSCVT",
-				"type": "String"
-			},
-			{
-				"name": "CuStreamT2RC3",
-				"type": "String"
-			},
-			{
-				"name": "CuStreamCUCLT",
-				"type": "String"
-			},
-			{
-				"name": "CuStreamT2RC1",
-				"type": "String"
-			},
-			{
-				"name": "CuStreamT1RC2",
-				"type": "String"
-			},
-			{
-				"name": "CuStreamT1RF",
-				"type": "String"
-			},
-			{
-				"name": "CuStreamT2RF",
-				"type": "String"
-			},
-			{
-				"name": "CuStreamT1RC3",
-				"type": "String"
-			},
-			{
-				"name": "CuStreamCUFC",
-				"type": "String"
-			},
-			{
-				"name": "CuStream1CUCLSCVC",
-				"type": "String"
-			},
-			{
-				"name": "CuStreamT2RC2",
-				"type": "String"
-			},
-			{
-				"name": "CuStream2CUCLT",
-				"type": "String"
-			},
-			{
-				"name": "CuStream2CUCLSCVC",
-				"type": "String"
-			},
-			{
-				"name": "CuStreamT1RC1",
-				"type": "String"
-			},
-			{
-				"name": "CuStream2CUCLC",
-				"type": "String"
-			},
-			{
-				"name": "CuStream1CUCLC",
-				"type": "String"
-			},
-			{
-				"name": "CuStreamCUCLC",
-				"type": "String"
-			},
-			{
-				"name": "CuT2RTOnline",
-				"type": "String"
-			},
-			{
-				"name": "CuRT3",
-				"type": "String"
-			},
-			{
-				"name": "SolidsRT3",
-				"type": "String"
-			},
-			{
-				"name": "CuRT4",
-				"type": "String"
-			},
-			{
-				"name": "SolidsRT4",
-				"type": "String"
-			},
-			{
-				"name": "PredVal",
-				"type": "String"
 			}
-		]
-	},
-	"type": "Microsoft.DataFactory/factories/datasets"
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"TimeStamp": {
+					"type": "string"
+				},
+				"Solids1CUCLSCVT": {
+					"type": "number"
+				},
+				"SolidsT2RC3": {
+					"type": "number"
+				},
+				"SolidsCUCLT": {
+					"type": "number"
+				},
+				"SolidsT2RC1": {
+					"type": "number"
+				},
+				"SolidsT1RC2": {
+					"type": "number"
+				},
+				"SolidsT1RF": {
+					"type": "number"
+				},
+				"SolidsT2RF": {
+					"type": "number"
+				},
+				"SolidsT1RC3": {
+					"type": "number"
+				},
+				"SolidsCUFC": {
+					"type": "number"
+				},
+				"Solids1CUCLSCVC": {
+					"type": "number"
+				},
+				"SolidsT2RC2": {
+					"type": "number"
+				},
+				"Solids2CUCLT": {
+					"type": "number"
+				},
+				"Solids2CUCLSCVC": {
+					"type": "number"
+				},
+				"SolidsT1RC1": {
+					"type": "number"
+				},
+				"Solids2CUCLC": {
+					"type": "number"
+				},
+				"Solids1CUCLC": {
+					"type": "number"
+				},
+				"SolidsCUCLC": {
+					"type": "number"
+				},
+				"CuStream1CUCLSCVT": {
+					"type": "number"
+				},
+				"CuStreamT2RC3": {
+					"type": "number"
+				},
+				"CuStreamCUCLT": {
+					"type": "number"
+				},
+				"CuStreamT2RC1": {
+					"type": "number"
+				},
+				"CuStreamT1RC2": {
+					"type": "number"
+				},
+				"CuStreamT1RF": {
+					"type": "number"
+				},
+				"CuStreamT2RF": {
+					"type": "number"
+				},
+				"CuStreamT1RC3": {
+					"type": "number"
+				},
+				"CuStreamCUFC": {
+					"type": "number"
+				},
+				"CuStream1CUCLSCVC": {
+					"type": "number"
+				},
+				"CuStreamT2RC2": {
+					"type": "number"
+				},
+				"CuStream2CUCLT": {
+					"type": "number"
+				},
+				"CuStream2CUCLSCVC": {
+					"type": "number"
+				},
+				"CuStreamT1RC1": {
+					"type": "number"
+				},
+				"CuStream2CUCLC": {
+					"type": "number"
+				},
+				"CuStream1CUCLC": {
+					"type": "number"
+				},
+				"CuStreamCUCLC": {
+					"type": "number"
+				},
+				"CuT2RTOnline": {
+					"type": "number"
+				},
+				"CuRT3": {
+					"type": "number"
+				},
+				"SolidsRT3": {
+					"type": "number"
+				},
+				"CuRT4": {
+					"type": "number"
+				},
+				"SolidsRT4": {
+					"type": "number"
+				},
+				"PredictedValues": {
+					"type": "string"
+				},
+				"MLMetadata": {
+					"type": "string"
+				}
+			}
+		}
+	}
 }
