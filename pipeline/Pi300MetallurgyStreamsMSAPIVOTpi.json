@@ -1318,7 +1318,16 @@
 							},
 							"userProperties": [],
 							"typeProperties": {
-								"storedProcedureName": "ANALYTIC.spDeletePi300MetallurgyStreamsMSAPIVOT"
+								"storedProcedureName": "ANALYTIC.spDeletePi300MetallurgyStreamsMSAPIVOT",
+								"storedProcedureParameters": {
+									"TimeStamp": {
+										"value": {
+											"value": "@activity('Lookup MAX Date Source').output.firstRow.enddate",
+											"type": "Expression"
+										},
+										"type": "Datetime"
+									}
+								}
 							},
 							"linkedServiceName": {
 								"referenceName": "pandwhdblisten_edwstageareasqlls",
