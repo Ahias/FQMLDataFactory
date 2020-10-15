@@ -1504,11 +1504,11 @@
 			},
 			"tablepath": {
 				"type": "String",
-				"defaultValue": "MLPi300MetallurgyStreamsMSAPIVOT/2020/01"
+				"defaultValue": "Pi300MetallurgyStreamsMSAPIVOT/2020/04"
 			},
 			"filename": {
 				"type": "String",
-				"defaultValue": "Pi300MetallurgyStreamsMSAPIVOT_20200101_0000.csv"
+				"defaultValue": "Pi300MetallurgyStreamsMSAPIVOT_20200401_0000.csv"
 			}
 		},
 		"annotations": [],
