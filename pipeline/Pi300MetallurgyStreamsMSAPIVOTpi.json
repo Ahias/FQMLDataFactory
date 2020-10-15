@@ -1297,6 +1297,33 @@
 								"referenceName": "fqmldatasandatasensordatalakedbls",
 								"type": "LinkedServiceReference"
 							}
+						},
+						{
+							"name": "Delete Row Predict",
+							"type": "SqlServerStoredProcedure",
+							"dependsOn": [
+								{
+									"activity": "Stored procedure Set EndDate",
+									"dependencyConditions": [
+										"Succeeded"
+									]
+								}
+							],
+							"policy": {
+								"timeout": "7.00:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"storedProcedureName": "ANALYTIC.spDeletePi300MetallurgyStreamsMSAPIVOT"
+							},
+							"linkedServiceName": {
+								"referenceName": "pandwhdblisten_edwstageareasqlls",
+								"type": "LinkedServiceReference"
+							}
 						}
 					],
 					"ifTrueActivities": [
