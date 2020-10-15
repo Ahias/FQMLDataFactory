@@ -1,5 +1,5 @@
 {
-	"name": "Pi300MetallurgyStreamsMSAPIVOTpi_copy1",
+	"name": "Pi300MetallurgyStreamsMSAPIVOTpi",
 	"properties": {
 		"description": "Load table [FQML\\svc_pan_bi_EXT].[Pi.300_Metallurgy_Streams_MSA_PIVOT]",
 		"activities": [
@@ -716,13 +716,13 @@
 										"userProperties": [],
 										"typeProperties": {
 											"source": {
-												"type": "DelimitedTextSource",
+												"type": "JsonSource",
 												"storeSettings": {
 													"type": "AzureBlobFSReadSettings",
 													"recursive": true
 												},
 												"formatSettings": {
-													"type": "DelimitedTextReadSettings"
+													"type": "JsonReadSettings"
 												}
 											},
 											"sink": {
@@ -1156,7 +1156,7 @@
 												"type": "DatasetReference",
 												"parameters": {
 													"filename": {
-														"value": "@variables('filename')",
+														"value": "@replace(variables('filename'),'.csv','.json')",
 														"type": "Expression"
 													},
 													"mainpath": {

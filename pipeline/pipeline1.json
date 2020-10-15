@@ -538,7 +538,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "MLPi300MetallurgyStreamsMSAPIVOTdatalakeds",
+						"referenceName": "MLPi300MetallurgyStreamsMSAPIVOTdatalakeds02",
 						"type": "DatasetReference",
 						"parameters": {
 							"filename": "Pi300MetallurgyStreamsMSAPIVOT_20200101_0000.csv",
