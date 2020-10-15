@@ -739,8 +739,7 @@
 												"mappings": [
 													{
 														"source": {
-															"name": "TimeStamp",
-															"type": "String"
+															"path": "$['TimeStamp']"
 														},
 														"sink": {
 															"name": "TimeStamp",
@@ -749,401 +748,370 @@
 													},
 													{
 														"source": {
-															"name": "Solids1CUCLSCVT",
-															"type": "String"
+															"path": "$['Solids1CUCLSCVT']"
 														},
 														"sink": {
 															"name": "Solids1CUCLSCVT",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "SolidsT2RC3",
-															"type": "String"
+															"path": "$['SolidsT2RC3']"
 														},
 														"sink": {
 															"name": "SolidsT2RC3",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "SolidsCUCLT",
-															"type": "String"
+															"path": "$['SolidsCUCLT']"
 														},
 														"sink": {
 															"name": "SolidsCUCLT",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "SolidsT2RC1",
-															"type": "String"
+															"path": "$['SolidsT2RC1']"
 														},
 														"sink": {
 															"name": "SolidsT2RC1",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "SolidsT1RC2",
-															"type": "String"
+															"path": "$['SolidsT1RC2']"
 														},
 														"sink": {
 															"name": "SolidsT1RC2",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "SolidsT1RF",
-															"type": "String"
+															"path": "$['SolidsT1RF']"
 														},
 														"sink": {
 															"name": "SolidsT1RF",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "SolidsT2RF",
-															"type": "String"
+															"path": "$['SolidsT2RF']"
 														},
 														"sink": {
 															"name": "SolidsT2RF",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "SolidsT1RC3",
-															"type": "String"
+															"path": "$['SolidsT1RC3']"
 														},
 														"sink": {
 															"name": "SolidsT1RC3",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "SolidsCUFC",
-															"type": "String"
+															"path": "$['SolidsCUFC']"
 														},
 														"sink": {
 															"name": "SolidsCUFC",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "Solids1CUCLSCVC",
-															"type": "String"
+															"path": "$['Solids1CUCLSCVC']"
 														},
 														"sink": {
 															"name": "Solids1CUCLSCVC",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "SolidsT2RC2",
-															"type": "String"
+															"path": "$['SolidsT2RC2']"
 														},
 														"sink": {
 															"name": "SolidsT2RC2",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "Solids2CUCLT",
-															"type": "String"
+															"path": "$['Solids2CUCLT']"
 														},
 														"sink": {
 															"name": "Solids2CUCLT",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "Solids2CUCLSCVC",
-															"type": "String"
+															"path": "$['Solids2CUCLSCVC']"
 														},
 														"sink": {
 															"name": "Solids2CUCLSCVC",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "SolidsT1RC1",
-															"type": "String"
+															"path": "$['SolidsT1RC1']"
 														},
 														"sink": {
 															"name": "SolidsT1RC1",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "Solids2CUCLC",
-															"type": "String"
+															"path": "$['Solids2CUCLC']"
 														},
 														"sink": {
 															"name": "Solids2CUCLC",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "Solids1CUCLC",
-															"type": "String"
+															"path": "$['Solids1CUCLC']"
 														},
 														"sink": {
 															"name": "Solids1CUCLC",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "SolidsCUCLC",
-															"type": "String"
+															"path": "$['SolidsCUCLC']"
 														},
 														"sink": {
 															"name": "SolidsCUCLC",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "CuStream1CUCLSCVT",
-															"type": "String"
+															"path": "$['CuStream1CUCLSCVT']"
 														},
 														"sink": {
 															"name": "CuStream1CUCLSCVT",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "CuStreamT2RC3",
-															"type": "String"
+															"path": "$['CuStreamT2RC3']"
 														},
 														"sink": {
 															"name": "CuStreamT2RC3",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "CuStreamCUCLT",
-															"type": "String"
+															"path": "$['CuStreamCUCLT']"
 														},
 														"sink": {
 															"name": "CuStreamCUCLT",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "CuStreamT2RC1",
-															"type": "String"
+															"path": "$['CuStreamT2RC1']"
 														},
 														"sink": {
 															"name": "CuStreamT2RC1",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "CuStreamT1RC2",
-															"type": "String"
+															"path": "$['CuStreamT1RC2']"
 														},
 														"sink": {
 															"name": "CuStreamT1RC2",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "CuStreamT1RF",
-															"type": "String"
+															"path": "$['CuStreamT1RF']"
 														},
 														"sink": {
 															"name": "CuStreamT1RF",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "CuStreamT2RF",
-															"type": "String"
+															"path": "$['CuStreamT2RF']"
 														},
 														"sink": {
 															"name": "CuStreamT2RF",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "CuStreamT1RC3",
-															"type": "String"
+															"path": "$['CuStreamT1RC3']"
 														},
 														"sink": {
 															"name": "CuStreamT1RC3",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "CuStreamCUFC",
-															"type": "String"
+															"path": "$['CuStreamCUFC']"
 														},
 														"sink": {
 															"name": "CuStreamCUFC",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "CuStream1CUCLSCVC",
-															"type": "String"
+															"path": "$['CuStream1CUCLSCVC']"
 														},
 														"sink": {
 															"name": "CuStream1CUCLSCVC",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "CuStreamT2RC2",
-															"type": "String"
+															"path": "$['CuStreamT2RC2']"
 														},
 														"sink": {
 															"name": "CuStreamT2RC2",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "CuStream2CUCLT",
-															"type": "String"
+															"path": "$['CuStream2CUCLT']"
 														},
 														"sink": {
 															"name": "CuStream2CUCLT",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "CuStream2CUCLSCVC",
-															"type": "String"
+															"path": "$['CuStream2CUCLSCVC']"
 														},
 														"sink": {
 															"name": "CuStream2CUCLSCVC",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "CuStreamT1RC1",
-															"type": "String"
+															"path": "$['CuStreamT1RC1']"
 														},
 														"sink": {
 															"name": "CuStreamT1RC1",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "CuStream2CUCLC",
-															"type": "String"
+															"path": "$['CuStream2CUCLC']"
 														},
 														"sink": {
 															"name": "CuStream2CUCLC",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "CuStream1CUCLC",
-															"type": "String"
+															"path": "$['CuStream1CUCLC']"
 														},
 														"sink": {
 															"name": "CuStream1CUCLC",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "CuStreamCUCLC",
-															"type": "String"
+															"path": "$['CuStreamCUCLC']"
 														},
 														"sink": {
 															"name": "CuStreamCUCLC",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "CuT2RTOnline",
-															"type": "String"
+															"path": "$['CuT2RTOnline']"
 														},
 														"sink": {
 															"name": "CuT2RTOnline",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "CuRT3",
-															"type": "String"
+															"path": "$['CuRT3']"
 														},
 														"sink": {
 															"name": "CuRT3",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "SolidsRT3",
-															"type": "String"
+															"path": "$['SolidsRT3']"
 														},
 														"sink": {
 															"name": "SolidsRT3",
-															"type": "String"
+															"type": "Double"
 														}
 													},
 													{
 														"source": {
-															"name": "CuRT4",
-															"type": "String"
+															"path": "$['CuRT4']"
 														},
 														"sink": {
 															"name": "CuRT4",
+															"type": "Double"
+														}
+													},
+													{
+														"source": {
+															"path": "$['SolidsRT4']"
+														},
+														"sink": {
+															"name": "SolidsRT4",
+															"type": "Double"
+														}
+													},
+													{
+														"source": {
+															"path": "$['PredictedValues']"
+														},
+														"sink": {
+															"name": "PredictedValues",
 															"type": "String"
 														}
 													},
 													{
 														"source": {
-															"name": "SolidsRT4",
-															"type": "String"
+															"path": "$['MLMetadata']"
 														},
 														"sink": {
-															"name": "SolidsRT4",
-															"type": "String"
-														}
-													},
-													{
-														"source": {
-															"name": "PredVal",
-															"type": "String"
-														},
-														"sink": {
-															"name": "PredVal",
+															"name": "MLMetadata",
 															"type": "String"
 														}
 													}
