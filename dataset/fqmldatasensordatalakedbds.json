@@ -1,5 +1,5 @@
 {
-	"name": "fqmldatasensordatalakedb",
+	"name": "fqmldatasensordatalakedbds",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "fqmldatasandatasensordatalakedbls",
