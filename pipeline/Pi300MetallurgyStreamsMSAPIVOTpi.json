@@ -54,7 +54,7 @@
 						"partitionOption": "None"
 					},
 					"dataset": {
-						"referenceName": "GetQueryExecutionDatesds",
+						"referenceName": "fqmldatasensordatalakedb",
 						"type": "DatasetReference"
 					},
 					"firstRowOnly": false
@@ -1471,7 +1471,7 @@
 						"partitionOption": "None"
 					},
 					"dataset": {
-						"referenceName": "GetQueryExecutionDatesds",
+						"referenceName": "fqmldatasensordatalakedb",
 						"type": "DatasetReference"
 					}
 				}
