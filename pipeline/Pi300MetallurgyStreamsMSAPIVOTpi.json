@@ -1123,9 +1123,18 @@
 												"referenceName": "MLPi300MetallurgyStreamsMSAPIVOTdatalakeds",
 												"type": "DatasetReference",
 												"parameters": {
-													"filename": "Pi300MetallurgyStreamsMSAPIVOT_20200401_0000.json",
-													"mainpath": "ingestion",
-													"tablepath": "MLPi300MetallurgyStreamsMSAPIVOT/2020/04"
+													"filename": {
+														"value": "@replace(variables('filename'),'.csv','.json')",
+														"type": "Expression"
+													},
+													"mainpath": {
+														"value": "@variables('mainpath')",
+														"type": "Expression"
+													},
+													"tablepath": {
+														"value": "@concat('ML',variables('tablepath'))",
+														"type": "Expression"
+													}
 												}
 											}
 										],
