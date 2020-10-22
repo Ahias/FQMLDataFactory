@@ -1118,6 +1118,17 @@
 												]
 											}
 										},
+										"inputs": [
+											{
+												"referenceName": "MLPi300MetallurgyStreamsMSAPIVOTdatalakeds",
+												"type": "DatasetReference",
+												"parameters": {
+													"filename": "Pi300MetallurgyStreamsMSAPIVOT_20200401_0000.json",
+													"mainpath": "ingestion",
+													"tablepath": "MLPi300MetallurgyStreamsMSAPIVOT/2020/04"
+												}
+											}
+										],
 										"outputs": [
 											{
 												"referenceName": "metallurgystreamspredictionsds",
