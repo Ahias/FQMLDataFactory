@@ -24,9 +24,18 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "Pi300MetallurgyStreamsMSAPIVOT_20200401_0000.json",
-				"folderPath": "MLPi300MetallurgyStreamsMSAPIVOT/2020/04",
-				"fileSystem": "ingestion"
+				"fileName": {
+					"value": "@dataset().filename",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().tablepath",
+					"type": "Expression"
+				},
+				"fileSystem": {
+					"value": "@dataset().mainpath",
+					"type": "Expression"
+				}
 			}
 		},
 		"schema": {
