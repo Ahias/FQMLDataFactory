@@ -54,7 +54,7 @@
 						"partitionOption": "None"
 					},
 					"dataset": {
-						"referenceName": "fqmldatasensordatalakedb",
+						"referenceName": "fqmldatasensordatalakedbds",
 						"type": "DatasetReference"
 					},
 					"firstRowOnly": false
@@ -1118,26 +1118,6 @@
 												]
 											}
 										},
-										"inputs": [
-											{
-												"referenceName": "MLPi300MetallurgyStreamsMSAPIVOTdatalakeds",
-												"type": "DatasetReference",
-												"parameters": {
-													"filename": {
-														"value": "@replace(variables('filename'),'.csv','.json')",
-														"type": "Expression"
-													},
-													"mainpath": {
-														"value": "@variables('mainpath')",
-														"type": "Expression"
-													},
-													"tablepath": {
-														"value": "@concat('ML',variables('tablepath'))",
-														"type": "Expression"
-													}
-												}
-											}
-										],
 										"outputs": [
 											{
 												"referenceName": "metallurgystreamspredictionsds",
@@ -1469,10 +1449,6 @@
 						},
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
-					},
-					"dataset": {
-						"referenceName": "fqmldatasensordatalakedb",
-						"type": "DatasetReference"
 					}
 				}
 			}
