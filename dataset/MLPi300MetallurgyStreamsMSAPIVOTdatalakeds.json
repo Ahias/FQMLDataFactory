@@ -5,6 +5,20 @@
 			"referenceName": "fqmdatasandatasensordatalakels",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"filename": {
+				"type": "string",
+				"defaultValue": "Pi300MetallurgyStreamsMSAPIVOT_20200401_0000.json"
+			},
+			"mainpath": {
+				"type": "string",
+				"defaultValue": "ingestion"
+			},
+			"tablepath": {
+				"type": "string",
+				"defaultValue": "MLPi300MetallurgyStreamsMSAPIVOT/2020/04"
+			}
+		},
 		"annotations": [],
 		"type": "Json",
 		"typeProperties": {
