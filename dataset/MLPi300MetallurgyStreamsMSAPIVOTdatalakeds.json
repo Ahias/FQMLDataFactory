@@ -36,7 +36,7 @@
 					"type": "string"
 				},
 				"Solids1CUCLSCVT": {
-					"type": "null"
+					"type": "number"
 				},
 				"SolidsT2RC3": {
 					"type": "number"
@@ -57,10 +57,10 @@
 					"type": "number"
 				},
 				"SolidsT1RC3": {
-					"type": "integer"
+					"type": "number"
 				},
 				"SolidsCUFC": {
-					"type": "null"
+					"type": "number"
 				},
 				"Solids1CUCLSCVC": {
 					"type": "number"
@@ -75,25 +75,25 @@
 					"type": "number"
 				},
 				"SolidsT1RC1": {
-					"type": "integer"
+					"type": "number"
 				},
 				"Solids2CUCLC": {
-					"type": "null"
+					"type": "number"
 				},
 				"Solids1CUCLC": {
-					"type": "integer"
+					"type": "number"
 				},
 				"SolidsCUCLC": {
-					"type": "null"
+					"type": "number"
 				},
 				"CuStream1CUCLSCVT": {
-					"type": "null"
+					"type": "number"
 				},
 				"CuStreamT2RC3": {
 					"type": "number"
 				},
 				"CuStreamCUCLT": {
-					"type": "null"
+					"type": "number"
 				},
 				"CuStreamT2RC1": {
 					"type": "number"
@@ -108,13 +108,13 @@
 					"type": "number"
 				},
 				"CuStreamT1RC3": {
-					"type": "integer"
+					"type": "number"
 				},
 				"CuStreamCUFC": {
-					"type": "null"
+					"type": "number"
 				},
 				"CuStream1CUCLSCVC": {
-					"type": "null"
+					"type": "number"
 				},
 				"CuStreamT2RC2": {
 					"type": "number"
@@ -123,34 +123,34 @@
 					"type": "number"
 				},
 				"CuStream2CUCLSCVC": {
-					"type": "null"
+					"type": "number"
 				},
 				"CuStreamT1RC1": {
 					"type": "number"
 				},
 				"CuStream2CUCLC": {
-					"type": "null"
+					"type": "number"
 				},
 				"CuStream1CUCLC": {
-					"type": "null"
+					"type": "number"
 				},
 				"CuStreamCUCLC": {
-					"type": "null"
+					"type": "number"
 				},
 				"CuT2RTOnline": {
-					"type": "null"
+					"type": "number"
 				},
 				"CuRT3": {
-					"type": "null"
+					"type": "number"
 				},
 				"SolidsRT3": {
-					"type": "null"
+					"type": "number"
 				},
 				"CuRT4": {
-					"type": "null"
+					"type": "number"
 				},
 				"SolidsRT4": {
-					"type": "null"
+					"type": "number"
 				},
 				"PredictedValues": {
 					"type": "string"
