@@ -6,7 +6,7 @@
 		"annotations": [],
 		"type": "SqlServer",
 		"typeProperties": {
-			"connectionString": "Integrated Security=True;Data Source=PANDWHDB-LISTEN;Initial Catalog=EDWStageArea",
+			"connectionString": "integrated security=True;data source=PANDWHDB-LISTEN;initial catalog=EDWStageArea",
 			"userName": "fqml\\pan_primusdata01",
 			"password": {
 				"type": "AzureKeyVaultSecret",

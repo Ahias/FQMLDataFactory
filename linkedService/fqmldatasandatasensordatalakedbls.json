@@ -5,7 +5,7 @@
 		"annotations": [],
 		"type": "AzureSqlDatabase",
 		"typeProperties": {
-			"connectionString": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=test-fqml-data-sensordatalake-sqlsrv.database.windows.net;Initial Catalog=fqmldatasensordatalakedb;User ID=usersqldl",
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=  test-fqml-data-sensordatalake-sqlsrv.database.windows.net,1433;initial catalog= fqmldatasensordatalakedb;user id= usersqldl",
 			"password": {
 				"type": "AzureKeyVaultSecret",
 				"store": {

@@ -1,5 +1,6 @@
 {
 	"name": "fqmlmlrequestfn",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
 		"annotations": [],
 		"type": "AzureFunction",
@@ -14,6 +15,5 @@
 				"secretName": "mlkeykvs"
 			}
 		}
-	},
-	"type": "Microsoft.DataFactory/factories/linkedservices"
+	}
 }

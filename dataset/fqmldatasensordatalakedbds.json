@@ -1,0 +1,13 @@
+{
+	"name": "fqmldatasensordatalakedbds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "fqmldatasandatasensordatalakedbls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
