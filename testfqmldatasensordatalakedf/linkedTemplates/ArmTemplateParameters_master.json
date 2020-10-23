@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "testfqmldatasensordatalakedf"
+		},
+		"fqmldatasandatasensordatalakedbls_connectionString": {
+			"value": ""
+		},
+		"pandwhdblisten_edwstageareasqlls_connectionString": {
+			"value": ""
+		},
+		"pandwhdblisten_metallurgystreamspredictionsls_connectionString": {
+			"value": ""
+		},
+		"fqmdatasandatasensordatalakels_properties_typeProperties_url": {
+			"value": "https://testfqmldatasensordl.dfs.core.windows.net/"
+		},
+		"fqmlmlrequestfn_properties_typeProperties_functionAppUrl": {
+			"value": "https://testfqmlmlrequestfn.azurewebsites.net"
+		},
+		"fqmlsecretskv_properties_typeProperties_baseUrl": {
+			"value": "https://testfqmldatafactorykv.vault.azure.net/"
+		},
+		"pandwhdblisten_edwstageareasqlls_properties_typeProperties_userName": {
+			"value": "fqml\\pan_primusdata01"
+		},
+		"pandwhdblisten_metallurgystreamspredictionsls_properties_typeProperties_userName": {
+			"value": "fqml\\pan_primusdata01"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
